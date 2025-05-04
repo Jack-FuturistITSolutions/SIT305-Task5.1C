@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         mainArticles2.add(new NewsArticle(4, "Elon Musk confirms he'd like to be the 'Emperor of Mars' someday", R.drawable.connect_image, "Apr 22, 2025", "Frank Goblin", "This is the body."));
         mainArticles2.add(new NewsArticle(5, "Greens decide to dissolve party - moved directly into Labor", R.drawable.connect_image, "Yesterday", "Frank Goblin", "This is the body."));
 
-        // Set up the main RecyclerView with grid layout (4 items per row)
+        // Set up the main RecyclerView with horizontal layout
         mainArticlesRecyclerView1 = findViewById(R.id.mainRecyclerView1);
         mainArticlesRecyclerView1.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         mainArticlesAdapter1 = new NewsArticleAdapter(this, mainArticles1);
         mainArticlesRecyclerView1.setAdapter(mainArticlesAdapter1);
 
-        // Set up the main RecyclerView with grid layout (4 items per row)
+        // Set up the main RecyclerView with horizontal layout
         mainArticlesRecyclerView2 = findViewById(R.id.mainRecyclerView2);
         mainArticlesRecyclerView2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
